@@ -1,0 +1,51 @@
+/* Common styles for all widgets */
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: rgba(43, 43, 43, 0.85); /* 85% opaque black */
+    color: #eee; 
+    text-align: center; 
+    padding: 10px; 
+    margin: 0; 
+    overflow: hidden; /* Prevent scrollbars */
+    -webkit-app-region: drag; /* Make the whole window draggable */
+    user-select: none; /* Prevent text selection while dragging */
+}
+
+h2 { 
+    margin: 0 0 5px 0; 
+    font-size: 1em; 
+    font-weight: 500;
+}
+
+.stat-value { 
+    font-size: 2.5em; 
+    font-weight: bold; 
+    -webkit-app-region: no-drag; /* Make stats selectable/not-draggable */
+    user-select: text; 
+}
+
+/* Specific colors for each widget */
+#cpu-usage { color: #4fc3f7; }
+#mem-usage { color: #81c784; }
+#net-rx, #net-tx { 
+    color: #ffb74d; 
+    font-size: 1.5em; /* Slightly smaller for network */
+}
+
+#process-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    font-size: 0.8em;
+    text-align: left;
+}
+#process-list li {
+    padding: 3px 0;
+    border-bottom: 1px solid #444;
+    color: #ccc;
+    -webkit-app-region: no-drag; /* Allow text selection */
+    user-select: text;
+}
+#process-list li:last-child {
+    border-bottom: none;
+}
