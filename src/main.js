@@ -80,6 +80,9 @@ app.whenReady().then(() => {
     createTray();
     // Show all widgets by default on start
     Object.values(windows).forEach(win => win.show());
+    
+    // Update the tray menu *after* showing the widgets
+    updateTrayMenu(); 
 });
 
 app.on('window-all-closed', () => {
