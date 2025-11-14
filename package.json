@@ -1,0 +1,22 @@
+{
+  "name": "devdash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . devdash --platform=linux --arch=x64 --out=dist/ --overwrite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^39.2.0",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "systeminformation": "^5.27.11"
+  }
+}
