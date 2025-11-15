@@ -5,8 +5,9 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-packager . devdash --platform=linux --arch=x64 --out=dist/ --overwrite --icon=assets/icon.png",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pack-win": "electron-packager . devdash --platform=win32 --arch=x64 --out=dist/ --overwrite --icon=assets/icon.png",
+    "pack-mac": "electron-packager . devdash --platform=darwin --arch=x64 --out=dist/ --overwrite --icon=assets/icon.png",
+    "pack-linux": "electron-packager . devdash --platform=linux --arch=x64 --out=dist/ --overwrite --icon=assets/icon.png"
   },
   "keywords": [],
   "author": "",
